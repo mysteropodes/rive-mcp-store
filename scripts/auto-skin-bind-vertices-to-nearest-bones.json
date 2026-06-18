@@ -1,9 +1,9 @@
 {
   "id": "auto-skin-bind-vertices-to-nearest-bones",
   "name": "Auto-Skin: Bind Vertices to Nearest Bones",
-  "description": "test",
+  "description": "Select your artboard after you bind bones to your shape and the script will define the weight of the bones automatically with closer approch to the bones.",
   "author": {
-    "name": "Mysteropodes",
+    "name": "Mysteropodes RiveBar Creator",
     "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
     "supportLink": "https://ko-fi.com/mysteropodes"
   },
