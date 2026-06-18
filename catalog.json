@@ -2,27 +2,6 @@
   "version": "1.0.0",
   "scripts": [
     {
-      "id": "create-artboard",
-      "title": "Create Artboard + Shape",
-      "description": "Create a new artboard with a centered shape in one click.",
-      "author": {
-        "name": "Cyril",
-        "avatarUrl": "https://github.com/mysteropodes.png",
-        "supportLink": "https://ko-fi.com/cyrilmcp"
-      },
-      "category": "design",
-      "tags": [
-        "artboard",
-        "shape"
-      ],
-      "icon": "grid",
-      "featured": true,
-      "downloadsCount": 0,
-      "likesCount": 0,
-      "hasUi": false,
-      "version": "1.0.0"
-    },
-    {
       "id": "inspect-artboard",
       "title": "Inspect Artboard",
       "description": "List all artboards and display the full hierarchy of the active one.",
