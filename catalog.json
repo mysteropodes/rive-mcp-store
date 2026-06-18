@@ -2,27 +2,6 @@
   "version": "1.0.0",
   "scripts": [
     {
-      "id": "inspect-artboard",
-      "title": "Inspect Artboard",
-      "description": "List all artboards and display the full hierarchy of the active one.",
-      "author": {
-        "name": "Cyril",
-        "avatarUrl": "https://github.com/mysteropodes.png",
-        "supportLink": "https://ko-fi.com/cyrilmcp"
-      },
-      "category": "design",
-      "tags": [
-        "inspect",
-        "hierarchy"
-      ],
-      "icon": "eye",
-      "featured": false,
-      "downloadsCount": 0,
-      "likesCount": 0,
-      "hasUi": false,
-      "version": "1.0.0"
-    },
-    {
       "id": "auto-skin-bind-vertices-to-nearest-bones",
       "title": "Auto-Skin: Bind Vertices to Nearest Bones",
       "description": "test",
