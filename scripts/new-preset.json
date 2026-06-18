@@ -1,0 +1,17 @@
+{
+  "id": "new-preset",
+  "name": "New Preset",
+  "description": "retest",
+  "author": {
+    "name": "Mysteropodes",
+    "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+    "supportLink": "https://ko-fi.com/mysteropodes"
+  },
+  "version": "1.0.0",
+  "steps": [
+    {
+      "tool": "",
+      "args": "{}"
+    }
+  ]
+}
