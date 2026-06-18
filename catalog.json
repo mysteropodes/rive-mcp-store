@@ -20,7 +20,7 @@
         "automatic"
       ],
       "icon": "bone",
-      "featured": false,
+      "featured": true,
       "downloadsCount": 0,
       "likesCount": 0,
       "hasUi": false,
