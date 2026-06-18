@@ -1,0 +1,5 @@
+{
+  "name": "Auto-Skin",
+  "description": "Automatically bind mesh vertices to the nearest bones with distance-based weight calculation.",
+  "steps": []
+}
