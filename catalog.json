@@ -26,6 +26,32 @@
       "hasUi": false,
       "version": "1.0.0",
       "updatedAt": "2026-06-18T13:25:40.280Z"
+    },
+    {
+      "id": "sequential-rename",
+      "title": "Sequential Rename",
+      "description": "Renames selected layers: incremental naming and/or search-replace in existing names",
+      "author": {
+        "name": "Mysteropodes RiveBar Creator",
+        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+        "supportLink": "https://ko-fi.com/mysteropodes"
+      },
+      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/sequential-rename.json",
+      "category": "utility",
+      "tags": [
+        "layers",
+        "names",
+        "rename",
+        "incremental",
+        "search-replace"
+      ],
+      "icon": "activity",
+      "featured": false,
+      "downloadsCount": 0,
+      "likesCount": 0,
+      "hasUi": true,
+      "version": "1.0.0",
+      "updatedAt": "2026-06-18T16:17:32.400Z"
     }
   ]
 }
