@@ -52,6 +52,33 @@
       "hasUi": true,
       "version": "1.0.0",
       "updatedAt": "2026-06-18T16:17:32.400Z"
+    },
+    {
+      "id": "rig-bone-renamer",
+      "title": "Rig Bone Renamer",
+      "description": "Automatically renames an entire skeletal hierarchy starting from a selected root bone. Choose the body part (Arm, Leg, Spine, Head, etc.) and side (Left/Right), and the script will traverse the hierarchy depth-first, applying standardized anatomical names (e.g., Shoulder, Elbow, Wrist) with customizable prefixes and suffixes. Ideal for quickly rigging characters with consistent naming standards.",
+      "author": {
+        "name": "Mysteropodes RiveBar Creator",
+        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+        "supportLink": "https://ko-fi.com/mysteropodes"
+      },
+      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/rig-bone-renamer.json",
+      "category": "rigging",
+      "tags": [
+        "bones",
+        "rig",
+        "renamer",
+        "renamer-bones",
+        "re namer-rig",
+        "renamer-rig-bones"
+      ],
+      "icon": "bone",
+      "featured": false,
+      "downloadsCount": 0,
+      "likesCount": 0,
+      "hasUi": true,
+      "version": "1.0.0",
+      "updatedAt": "2026-06-18T16:50:51.308Z"
     }
   ]
 }
