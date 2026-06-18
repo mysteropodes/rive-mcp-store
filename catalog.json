@@ -1,25 +1,4 @@
 {
   "version": "1.0.0",
-  "scripts": [
-    {
-      "id": "auto-skin-bind-vertices-to-nearest-bones",
-      "title": "Auto-Skin: Bind Vertices to Nearest Bones",
-      "description": "test",
-      "author": {
-        "name": "Mysteropodes",
-        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
-        "supportLink": "https://ko-fi.com/mysteropodes"
-      },
-      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/auto-skin-bind-vertices-to-nearest-bones.json",
-      "category": "design",
-      "tags": [],
-      "icon": "bolt",
-      "featured": false,
-      "downloadsCount": 0,
-      "likesCount": 0,
-      "hasUi": false,
-      "version": "1.0.0",
-      "updatedAt": "2026-06-18T11:01:44.446Z"
-    }
-  ]
+  "scripts": []
 }
