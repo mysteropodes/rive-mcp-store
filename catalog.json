@@ -3,9 +3,17 @@
     "id": "auto-skin",
     "title": "Auto-Skin",
     "description": "Automatically bind mesh vertices to the nearest bones with distance-based weight calculation.",
-    "author": { "name": "Cyril", "avatarUrl": "https://github.com/mysteropodes.png", "supportLink": "https://ko-fi.com/cyrilmcp" },
+    "author": {
+      "name": "Cyril",
+      "avatarUrl": "https://github.com/mysteropodes.png",
+      "supportLink": "https://ko-fi.com/cyrilmcp"
+    },
     "category": "rigging",
-    "tags": ["bones", "mesh", "weights"],
+    "tags": [
+      "bones",
+      "mesh",
+      "weights"
+    ],
     "icon": "bone",
     "featured": true,
     "downloadsCount": 0,
@@ -17,9 +25,16 @@
     "id": "create-artboard",
     "title": "Create Artboard + Shape",
     "description": "Create a new artboard with a centered shape in one click.",
-    "author": { "name": "Cyril", "avatarUrl": "https://github.com/mysteropodes.png", "supportLink": "https://ko-fi.com/cyrilmcp" },
+    "author": {
+      "name": "Cyril",
+      "avatarUrl": "https://github.com/mysteropodes.png",
+      "supportLink": "https://ko-fi.com/cyrilmcp"
+    },
     "category": "design",
-    "tags": ["artboard", "shape"],
+    "tags": [
+      "artboard",
+      "shape"
+    ],
     "icon": "grid",
     "featured": true,
     "downloadsCount": 0,
@@ -31,14 +46,47 @@
     "id": "inspect-artboard",
     "title": "Inspect Artboard",
     "description": "List all artboards and display the full hierarchy of the active one.",
-    "author": { "name": "Cyril", "avatarUrl": "https://github.com/mysteropodes.png", "supportLink": "https://ko-fi.com/cyrilmcp" },
+    "author": {
+      "name": "Cyril",
+      "avatarUrl": "https://github.com/mysteropodes.png",
+      "supportLink": "https://ko-fi.com/cyrilmcp"
+    },
     "category": "design",
-    "tags": ["inspect", "hierarchy"],
+    "tags": [
+      "inspect",
+      "hierarchy"
+    ],
     "icon": "eye",
     "featured": false,
     "downloadsCount": 0,
     "likesCount": 0,
     "hasUi": false,
     "version": "1.0.0"
+  },
+  {
+    "id": "auto-skin-bind-vertices-to-nearest-bones",
+    "title": "Auto-Skin: Bind Vertices to Nearest Bones",
+    "description": "Select your artboard after you bind bones to your shape and the script will define the weight of the bones automatically with closer approch to the bones.",
+    "author": {
+      "name": "Mysteropodes",
+      "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+      "supportLink": "https://ko-fi.com/mysteropodes"
+    },
+    "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/auto-skin-bind-vertices-to-nearest-bones.json",
+    "category": "design",
+    "tags": [
+      "bones",
+      "weight",
+      "shape",
+      "binding",
+      "automatic"
+    ],
+    "icon": "bolt",
+    "featured": false,
+    "downloadsCount": 0,
+    "likesCount": 0,
+    "hasUi": false,
+    "version": "1.0.0",
+    "updatedAt": "2026-06-18T10:16:24.917Z"
   }
 ]
