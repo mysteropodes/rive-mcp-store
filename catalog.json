@@ -2,28 +2,6 @@
   "version": "1.0.0",
   "scripts": [
     {
-      "id": "auto-skin",
-      "title": "Auto-Skin",
-      "description": "Automatically bind mesh vertices to the nearest bones with distance-based weight calculation.",
-      "author": {
-        "name": "Cyril",
-        "avatarUrl": "https://github.com/mysteropodes.png",
-        "supportLink": "https://ko-fi.com/cyrilmcp"
-      },
-      "category": "rigging",
-      "tags": [
-        "bones",
-        "mesh",
-        "weights"
-      ],
-      "icon": "bone",
-      "featured": true,
-      "downloadsCount": 0,
-      "likesCount": 0,
-      "hasUi": false,
-      "version": "1.0.0"
-    },
-    {
       "id": "create-artboard",
       "title": "Create Artboard + Shape",
       "description": "Create a new artboard with a centered shape in one click.",
