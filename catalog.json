@@ -79,6 +79,30 @@
       "hasUi": true,
       "version": "1.0.0",
       "updatedAt": "2026-06-18T16:50:51.308Z"
+    },
+    {
+      "id": "solo-to-state-machine",
+      "title": "Solo to State Machine",
+      "description": "Solo to state machine allow to choose your solo layer with a number input into the viewmodel. Create one Timeline per layer> with a keyframe for each layer per timeline > make the state machine and condition with a number into the VM of the artboard.",
+      "author": {
+        "name": "Mysteropodes RiveBar Creator",
+        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+        "supportLink": "https://ko-fi.com/mysteropodes"
+      },
+      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/solo-to-state-machine.json",
+      "category": "utility",
+      "tags": [
+        "workflow",
+        "solo",
+        "view model"
+      ],
+      "icon": "visibility",
+      "featured": false,
+      "downloadsCount": 0,
+      "likesCount": 0,
+      "hasUi": true,
+      "version": "1.0.0",
+      "updatedAt": "2026-06-19T10:53:28.074Z"
     }
   ]
 }
