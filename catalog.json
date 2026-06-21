@@ -103,6 +103,34 @@
       "hasUi": true,
       "version": "1.0.0",
       "updatedAt": "2026-06-19T10:53:28.074Z"
+    },
+    {
+      "id": "copy-paste-curves",
+      "title": "Copy Paste Curves",
+      "description": "A lightweight tool to copy easing curves (interpolation settings) from selected keyframes and paste them onto others. Perfect for replicating motion styles across your animation timeline without manually adjusting bezier handles.",
+      "author": {
+        "name": "Mysteropodes RiveBar Creator",
+        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+        "supportLink": "https://ko-fi.com/mysteropodes"
+      },
+      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/copy-paste-curves.json",
+      "category": "animation",
+      "tags": [
+        "keyframes",
+        "easing",
+        "curves",
+        "copy",
+        "paste",
+        "animation",
+        "keys"
+      ],
+      "icon": "analytics",
+      "featured": false,
+      "downloadsCount": 0,
+      "likesCount": 0,
+      "hasUi": true,
+      "version": "1.0.0",
+      "updatedAt": "2026-06-21T21:51:55.032Z"
     }
   ]
 }
