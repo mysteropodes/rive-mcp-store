@@ -124,7 +124,7 @@
         "workflow"
       ],
       "icon": "analytics",
-      "featured": false,
+      "featured": true,
       "downloadsCount": 0,
       "likesCount": 0,
       "hasUi": false,
