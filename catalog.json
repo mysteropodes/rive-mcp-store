@@ -182,6 +182,33 @@
       "hasUi": true,
       "version": "1.0.0",
       "updatedAt": "2026-06-22T09:39:41.725Z"
+    },
+    {
+      "id": "motion-path-editor",
+      "title": "Motion Path Editor",
+      "description": "The Motion Path Editor allows you to visually control the spatial curves (motion paths) between position keyframes in Rive, a feature that does not exist natively.",
+      "author": {
+        "name": "Mysteropodes RiveBar Creator",
+        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+        "supportLink": "https://ko-fi.com/mysteropodes"
+      },
+      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/motion-path-editor.json",
+      "category": "animation",
+      "tags": [
+        "beziers",
+        "curves",
+        "motion path",
+        "animation",
+        "keyframes"
+      ],
+      "icon": "visibility",
+      "featured": false,
+      "downloadsCount": 0,
+      "likesCount": 0,
+      "hasUi": true,
+      "version": "1.0.0",
+      "updatedAt": "2026-06-22T20:02:45.830Z",
+      "helpGuide": "Motion Path Editor — Select 2+ position keyframes in Rive's timeline, then run the script.\n\nDrag colored handles to shape the spatial curve between keyframes\nClick a white keyframe dot to select it and reveal easing sliders\nDrag on empty space to marquee-select multiple keyframes\nEase Out = how much the object decelerates leaving that keyframe\nEase In = how much the object decelerates arriving at that keyframe\nEase All 75% = quick smooth preset for all keyframes\nReset Path = straight lines + linear easing\nAlt + clic to drive bezier in mirror\nChanges apply live on handle release; click Continue to finalize"
     }
   ]
 }
