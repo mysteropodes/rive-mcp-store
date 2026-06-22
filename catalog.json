@@ -155,6 +155,31 @@
       "hasUi": false,
       "version": "1.0.0",
       "updatedAt": "2026-06-22T08:14:59.372Z"
+    },
+    {
+      "id": "solo-sequence-timeline",
+      "title": "Solo Sequence Timeline",
+      "description": "Automates the creation of a \"Solo Sequence\" animation. \nPerfect for the creation of animation sequences from imported assets.",
+      "author": {
+        "name": "Mysteropodes RiveBar Creator",
+        "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+        "supportLink": "https://ko-fi.com/mysteropodes"
+      },
+      "downloadUrl": "https://raw.githubusercontent.com/mysteropodes/rive-mcp-store/main/scripts/solo-sequence-timeline.json",
+      "category": "animation",
+      "tags": [
+        "sequence",
+        "animation",
+        "solo",
+        "timeline"
+      ],
+      "icon": "visibility",
+      "featured": false,
+      "downloadsCount": 0,
+      "likesCount": 0,
+      "hasUi": true,
+      "version": "1.0.0",
+      "updatedAt": "2026-06-22T09:39:41.725Z"
     }
   ]
 }
