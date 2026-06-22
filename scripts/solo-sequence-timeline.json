@@ -1,0 +1,96 @@
+{
+  "id": "solo-sequence-timeline",
+  "name": "Solo Sequence Timeline",
+  "description": "Automates the creation of a \"Solo Sequence\" animation. \nPerfect for the creation of animation sequences from imported assets.",
+  "author": {
+    "name": "Mysteropodes RiveBar Creator",
+    "avatarUrl": "/Users/cyril/Library/Application Support/rivebar/avatar.jpg",
+    "supportLink": "https://ko-fi.com/mysteropodes"
+  },
+  "version": "1.0.0",
+  "steps": [
+    {
+      "tool": "get_selection",
+      "args": "{}",
+      "label": "Get selected Solo"
+    },
+    {
+      "tool": "_compute",
+      "args": "var d = JSON.parse(results[0]); var s = d.selection || d.objects || (Array.isArray(d) ? d : []); if (!s.length) throw new Error('Select a Solo layer first.'); var obj = s[0]; setVar('soloId', obj.id); setVar('soloName', obj.name || 'Layer');",
+      "label": "Validate selection"
+    },
+    {
+      "tool": "get_artboard_hierarchy",
+      "args": "{ \"depth\": 8 }",
+      "label": "Read hierarchy"
+    },
+    {
+      "tool": "_compute",
+      "args": "var h = JSON.parse(results[2]); var objs = h.objects || []; var solo = null; for (var i = 0; i < objs.length; i++) { if (objs[i].id === vars.soloId) { solo = objs[i]; break; } } if (!solo) throw new Error('Selected Solo not found in hierarchy.'); var childIds = solo.children || []; if (childIds.length < 1) throw new Error('Selected Solo has no children.'); var byId = {}; for (var i = 0; i < objs.length; i++) byId[objs[i].id] = objs[i]; var children = []; for (var c = 0; c < childIds.length; c++) { if (byId[childIds[c]]) children.push(byId[childIds[c]]); } if (!children.length) throw new Error('Could not resolve Solo children.'); var safeName = String(vars.soloName || 'Layer').replace(/[^a-zA-Z0-9_]+/g, '_').replace(/^_+|_+$/g, '') || 'Layer'; setVar('children', children); setVar('childCount', String(children.length)); setVar('defaultTimelineName', 'seq_solo_' + safeName);",
+      "label": "Find Solo children"
+    },
+    {
+      "tool": "_ui",
+      "ui": {
+        "title": "Solo Sequence ({{childCount}} children)",
+        "fields": [
+          {
+            "key": "timelineName",
+            "label": "Timeline name",
+            "type": "text",
+            "default": "{{defaultTimelineName}}"
+          },
+          {
+            "key": "startFrame",
+            "label": "Start frame",
+            "type": "number",
+            "default": 0
+          },
+          {
+            "key": "frameStep",
+            "label": "Step between children",
+            "type": "number",
+            "default": 1
+          }
+        ]
+      },
+      "label": "Configure sequence"
+    },
+    {
+      "tool": "animation_editor",
+      "args": "{ \"command\": \"listLinearAnimations\" }",
+      "label": "List timelines"
+    },
+    {
+      "tool": "_compute",
+      "args": "var raw = JSON.parse(results[5]); var all = raw.linearAnimations || []; var name = vars.timelineName || vars.defaultTimelineName; for (var i = 0; i < all.length; i++) { if (all[i].name === name) throw new Error('A timeline with this name already exists: ' + name); } var step = parseFloat(vars.frameStep); if (isNaN(step) || step <= 0) step = 1; var start = parseFloat(vars.startFrame); if (isNaN(start)) start = 0; var count = (vars.children || []).length; var end = start + Math.max(0, count - 1) * step; var duration = Math.max(1, end + step); setVar('timelineName', name); setVar('frameStep', String(step)); setVar('startFrame', String(start)); setVar('duration', String(duration)); setVar('timelineList', [{ name: name, duration: duration }]);",
+      "label": "Prepare timeline"
+    },
+    {
+      "tool": "animation_editor",
+      "args": "{ \"command\": \"createLinearAnimations\", \"data\": { \"createLinearAnimations\": { \"linearAnimations\": {{json:timelineList}} } } }",
+      "label": "Create timeline"
+    },
+    {
+      "tool": "animation_editor",
+      "args": "{ \"command\": \"listLinearAnimations\" }",
+      "label": "Refresh timelines"
+    },
+    {
+      "tool": "_compute",
+      "args": "var raw = JSON.parse(results[8]); var all = raw.linearAnimations || []; var anim = null; for (var i = 0; i < all.length; i++) { if (all[i].name === vars.timelineName) { anim = all[i]; break; } } if (!anim) throw new Error('Created timeline not found: ' + vars.timelineName); var children = vars.children || []; var start = parseFloat(vars.startFrame); var step = parseFloat(vars.frameStep); var keys = []; for (var c = 0; c < children.length; c++) { keys.push({ objectId: vars.soloId, propertyKey: 296, frame: start + c * step, value: children[c].id, interpolationType: 'hold' }); } setVar('animationId', anim.id); setVar('keyframes', keys); setVar('keyCount', String(keys.length));",
+      "label": "Build Solo keys"
+    },
+    {
+      "tool": "animation_editor",
+      "args": "{ \"command\": \"modifyKeyFrames\", \"data\": { \"modifyKeyFrames\": { \"animationId\": \"{{animationId}}\", \"add\": {{json:keyframes}} } } }",
+      "label": "Add Solo sequence keys"
+    },
+    {
+      "tool": "_toast",
+      "args": "Created {{timelineName}} with {{keyCount}} Solo keyframe(s)",
+      "toastType": "success",
+      "label": "Done"
+    }
+  ]
+}
