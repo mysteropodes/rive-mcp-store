@@ -1,5 +1,4 @@
 {
-  "version": "1.0.0",
   "scripts": [
     {
       "id": "auto-skin-bind-vertices-to-nearest-bones",
@@ -129,7 +128,9 @@
       "likesCount": 0,
       "hasUi": false,
       "version": "1.0.4",
-      "updatedAt": "2026-06-22T14:44:25.242Z"
+      "updatedAt": "2026-06-22T14:44:25.242Z",
+      "widget": "<style>#cpc{width:100%;height:100%;display:flex;justify-content:center;align-items:center;padding:4px;background:transparent;font-family:system-ui;box-sizing:border-box}#cpc .row{display:flex;gap:4px;width:100%;height:100%}#cpc button{flex:1;border:1px solid;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;transition:all 0.15s;text-transform:uppercase;letter-spacing:0.4px}#cpc button:hover{filter:brightness(1.15)}#cpc .btn-copy{background:#2d3832;border-color:#2dd4a0;color:#9ee8c9}#cpc .btn-paste{background:#363650;border-color:#7c5cfc;color:#dcd8ff}</style><div id='cpc'><div class='row'><button class='btn-copy' onclick=\"window._widgetRun('Copy Paste Curves',{action:'copy'})\">Copy</button><button class='btn-paste' onclick=\"window._widgetRun('Copy Paste Curves',{action:'paste'})\">Paste</button></div></div>",
+      "display": "widget"
     },
     {
       "id": "curve-presets",
